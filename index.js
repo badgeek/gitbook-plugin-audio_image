@@ -28,7 +28,7 @@ module.exports={
 					 	'\').play()"',
 					 	imgtags, '/><br />');
 					if (this.generator == 'website') {
-						s = s.concat('<audio id="aimg-', iid, '"', audiotags, '>');
+						s = s.concat('<audio preload="none" id="aimg-', iid, '"', audiotags, '>');
 						for(var i = 1; i<args.length; i++){
 							s += '<source src="' + args[i].replace('\\,', ',') + '" />';
 						}
